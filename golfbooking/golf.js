@@ -14,7 +14,7 @@ const bookings = {};
 // Handle Telegram commands
 async function handleCommand(cmd, args, chatId) {
   switch (cmd) {
-    case '/book':
+    case '/golfbook':
       await startBooking(chatId);
       break;
     case '/cancel':
@@ -33,7 +33,7 @@ async function handleCommand(cmd, args, chatId) {
       await message({
         action: 'send',
         chatId,
-        message: '❌ *Unknown command*. Try `/book`, `/cancel`, `/update`, `/invite`, or `/list`.'
+        message: '❌ *Unknown command*. Try `/golfbook`, `/cancel`, `/update`, `/invite`, or `/list`.'
       });
   }
 }

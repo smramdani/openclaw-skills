@@ -1,0 +1,12 @@
+{
+  "name": "golfbooking-agent",
+  "version": "1.0.0",
+  "description": "OpenClaw agent for the GolfBooking Skill",
+  "main": "golf.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "openclaw": "^1.0.0"
+  }
+}

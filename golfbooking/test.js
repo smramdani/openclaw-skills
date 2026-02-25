@@ -32,10 +32,10 @@ axios.delete = async (url) => {
   throw new Error('Mock API error');
 };
 
-// Test 1: /book command
-const testBookCommand = async () => {
-  console.log('Test 1: /book command');
-  await handleCommand('/book', [], '123');
+// Test 1: /golfbook command
+const testGolfbookCommand = async () => {
+  console.log('Test 1: /golfbook command');
+  await handleCommand('/golfbook', [], '123');
   console.log('✅ Test 1 Passed: Booking started.');
 };
 
@@ -71,7 +71,7 @@ const testCallback = async () => {
 // Run tests
 (async () => {
   console.log('Running tests...');
-  await testBookCommand();
+  await testGolfbookCommand();
   await testCancelCommand();
   await testInviteCommand();
   await testListCommand();
