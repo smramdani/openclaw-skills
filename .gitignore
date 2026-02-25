@@ -1,0 +1,19 @@
+# Ignore sensitive files
+*.secret
+*.key
+*.pem
+.env
+
+# Ignore OS-specific files
+.DS_Store
+Thumbs.db
+
+# Ignore IDE files
+.idea/
+.vscode/
+*.swp
+
+# Ignore build artifacts
+node_modules/
+dist/
+build/
